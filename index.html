@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="estilos.css">
+  <script type="text/javascript" src="script.js"></script>
+  <title>CIFRADO</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="logo.jpg" alt="logo alura colorido">
+    </div>
+  </header>
+
+  <main>
+    <section class="seccion1">
+      <div class="caja_de_texto">
+        <input type="text" id="textoEncriptado" placeholder="INGRESA TEXTO AQUÍ">
+      </div>
+      <div class="caja_de_botones">
+        <button type="button" id="botonEncriptado">ENCRIPTAR</button>
+        <button type="button" id="botonDesencriptado">DESENCRIPTAR</button>
+      </div>
+    </section>
+
+    <section class="seccion2">
+      <div class="caja_del_muneco">
+        <img src="muñeco.png" alt="muneco_alura">
+      </div>
+
+      <div class="cajaresultado">
+        <textarea class="centrado" name="RESULTADO" id="textoDesencriptado" cols="30" rows="10" placeholder="NINGÚN MENSAJE FUE ENCONTRADO. Ingresa el texto"></textarea>
+        <button type="button" id="botonCopiar">COPIAR</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="imagen_pie_pagina">
+      <img src="imagen_alura_challenges.png" alt="imagen de alura challenge">
+    </div>
+    <div class="autor">
+      <h3>Darlin Alexander Burgos Saltos-</h3>
+      <h4>Challenge de Alura Latam-Oracle</h4>
+    </div>
+  </footer>
+</body>
+<script>
+	var btn = document.querySelector("#botonEncriptado");
+	btn.onclick = Encriptar;
+
+	var btn2 = document.querySelector("#botonDesencriptado");
+	btn2.onclick = Desencriptar;
+
+	var btn3 = document.querySelector("#botonCopiar");
+	btn3.onclick = Copiar;
+</script>
+</html>
